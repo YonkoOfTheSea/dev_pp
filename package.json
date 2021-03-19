@@ -1,5 +1,5 @@
 {
-  "name": "DEV_PP",
+  "name": "dev_pp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YonkoOfTheSea/DEV_PP.git"
+    "url": "git+https://github.com/YonkoOfTheSea/dev_pp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/YonkoOfTheSea/DEV_PP/issues"
+    "url": "https://github.com/YonkoOfTheSea/dev_pp/issues"
   },
-  "homepage": "https://github.com/YonkoOfTheSea/DEV_PP#readme",
+  "homepage": "https://github.com/YonkoOfTheSea/dev_pp#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.5"
   }
