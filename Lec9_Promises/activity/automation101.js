@@ -13,7 +13,7 @@ let browserOpenPromise = puppeteer.launch({
   defaultViewport: null,
   args: ["--start-maximized"],
 });
-// Promise<Pending>
+// Promise<Pending
 
 browserOpenPromise
   .then(function (browser) {
