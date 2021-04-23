@@ -10,7 +10,7 @@
   
   .header {
     height: 15vh;
-    background: #34495e;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -35,7 +35,7 @@
   }
   
   .red {
-    background: #e74c3c !important;
+    background : #ff6b81  !important;
   }
   
   .blue {
@@ -46,8 +46,8 @@
     background: #2ecc71 !important;
   }
   
-  .black {
-    background: #34495e !important;
+  .yellow {
+    background: #feca57 !important;
   }
   
   .filter:hover {
@@ -90,7 +90,7 @@
   
   .tickets-container {
     min-height: 85vh;
-    background: #bdc3c7;
+    background: #aaa69d;
     padding: 2rem;
     display: flex;
     justify-content: space-evenly;

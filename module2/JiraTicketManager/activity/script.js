@@ -1,12 +1,12 @@
 let filterCodes = {
-    red: "#e74c3c",
+    red: "#ff6b81",
     blue: "#3498db",
     green: "#2ecc71",
-    black: "#34495e",
+    yellow: "#feca57",
   };
   
   // this is the default filter selected for tickets !!!
-  let selectedFilter = "black";
+  let selectedFilter = "yellow";
   
   let allFilters = document.querySelectorAll(".ticket-filters div");
   let ticketContainer = document.querySelector(".tickets-container");
@@ -55,7 +55,7 @@ let filterCodes = {
     <div class="modal-filter red"></div>
     <div class="modal-filter blue"></div>
     <div class="modal-filter green"></div>
-    <div class="modal-filter black active-filter"></div>
+    <div class="modal-filter yellow active-filter"></div>
   </div>`;
     return modalDiv;
   }
@@ -95,7 +95,7 @@ let filterCodes = {
       e.target.parentNode.remove();
       
       // again set by default filter as black !!!
-      selectedFilter = "black";
+      selectedFilter = "yellow";
     }
   }
   
