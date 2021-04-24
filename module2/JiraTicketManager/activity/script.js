@@ -85,7 +85,7 @@ let filterCodes = {
       ticketDiv.classList.add("ticket");
       // set the html of the ticket wala div !!
       ticketDiv.innerHTML = ` <div class="ticket-filter ${selectedFilter}"></div>
-      <div class="ticket-id">#exampleId</div>
+      <div class="ticket-id">#${uid()}</div>
       <div class="ticket-content">${modalText}</div>`;
   
       // append the ticket on the UI !!!!
