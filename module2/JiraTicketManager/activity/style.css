@@ -10,7 +10,7 @@
 
 .header {
   height: 15vh;
-  background: #fbecfd;
+  background: #deeac6;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -93,7 +93,7 @@
 
 .tickets-container {
   min-height: 85vh;
-  background: #fdeff1;
+  background: #ecd0d0b3;
   padding: 2rem;
   display: flex;
   justify-content: space-evenly;
