@@ -1,12 +1,12 @@
 let filterCodes = {
-  red: "#e74c3c",
-  blue: "#3498db",
-  green: "#2ecc71",
-  black: "#34495e",
+  red: "#d63031",
+  yellow: "#FFC312",
+  green: "#00b894",
+  blue: "#0abde3",
 };
 
 // this is the default filter selected for tickets !!!
-let selectedFilter = "black";
+let selectedFilter = "blue";
 
 let allFilters = document.querySelectorAll(".ticket-filters div");
 let ticketContainer = document.querySelector(".tickets-container");
@@ -49,7 +49,7 @@ openModalBtn.addEventListener("click", handleOpenModal);
 closeModalBtn.addEventListener("click" , handleCloseModal);
 
 function toggleTicketFilter(e){
-  let filters = ["red" , "blue" , "green" , "black"];
+  let filters = ["red" , "yellow" , "green" , "blue"];
   let currentFilter = e.target.classList[1];
   let idx = filters.indexOf(currentFilter);
   idx++;
@@ -128,9 +128,9 @@ function createModal() {
  </div>
 <div class="modal-filter-options">
   <div class="modal-filter red"></div>
-  <div class="modal-filter blue"></div>
+  <div class="modal-filter yellow"></div>
   <div class="modal-filter green"></div>
-  <div class="modal-filter black active-filter"></div>
+  <div class="modal-filter blue active-filter"></div>
 </div>`;
   return modalDiv;
 }
@@ -203,7 +203,7 @@ function addTicket(e) {
 
 
     // again set by default filter as black !!!
-    selectedFilter = "black";
+    selectedFilter = "blue";
   }
 }
 function clearModalTextBox(e) {
