@@ -25,3 +25,33 @@ function initCells(){
 }
 initCells();
 
+let sheetsDB = [];
+
+let db; // active-sheet db
+let visitedCells; // active sheet ke visited cells
+
+function initDB(){
+    let newSheetDB = [];
+    for(let i=0 ; i<100 ; i++){
+        let row = [];
+        for(let j=0 ; j<26 ; j++){
+            //i j
+            let name = String.fromCharCode(j+65)+(i+1)+"";
+            let cellObject = {
+                name:name,
+                value:"",
+                formula:"",
+                childrens:[],
+                parents:[],
+                visited:false
+            }
+            row.push(cellObject);
+        }
+        newSheetDB.push(row);
+    }
+    visitedCells = [];
+    db = newSheetDB;
+    sheetsDB.push({db:newSheetDB ,visitedCells:visitedCells});
+    console.log(sheetsDB);
+}
+initDB();
